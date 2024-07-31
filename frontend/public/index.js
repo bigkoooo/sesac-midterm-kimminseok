@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // onkeypress="if(window.event.keyCode==13){join()}"
 
         const removeButton = document.createElement('button') // 삭제
-        removeButton.textContent = '삭제'
+        removeButton.textContent = 'x'
 
 
         removeButton.addEventListener('click', (event) => {
@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
         checkBox.addEventListener('change', (event) => {
             if(checkBox.checked){
                 text.style.textDecorationLine = "line-through"
+                text.style.color = "red"
+                
             }else{
                 text.style.textDecorationLine = "none"
             }
