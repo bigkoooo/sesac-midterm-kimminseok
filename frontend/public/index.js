@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         removeButton.addEventListener('click', (event) => {
             event.currentTarget.parentNode.parentNode.removeChild(event.currentTarget.parentNode)
+
+            
 })
 
         checkBox.addEventListener('change', (event) => {

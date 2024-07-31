@@ -9,15 +9,16 @@
 </head>
 <body>
     <header class="header1">
-        <span><img src="./public/codingon.png" alt="배너"></span>
-        <ul class="menus">
+        <div><img src="./public/codingon.png" alt=""></div>
+        <ul>
+          
           <li>To Do List</li>
         </ul>
       </header>
 
     <br>
     <input id="toDo" type="text">
-    <button id="addTodo">작성</button>
+    <button id="addTodo" @keyup.enter="enterKeyFunction">작성</button>
 
     <div id="toDoList">
         <br>

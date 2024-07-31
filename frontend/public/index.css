@@ -1,6 +1,15 @@
-img{
-    display: inline-flex;
+/* div{
+    display:flex;
     height: 90px;
+    background-image: url("https://sesac.codingon.co.kr/1430-f/codingon.png")
+} */
+
+img{
+    height: 90px;
+}
+
+body{
+    background-color: aquamarine;
 }
 
 ul {
@@ -20,7 +29,7 @@ header {
 
   .header1 > .menus li {
     display: inline-flex;
-    align-items: center;
+    /* align-items: center; */
     padding-inline: 0px 10px;
   }
 
