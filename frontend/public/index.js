@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const toDo = document.querySelector('#toDo')
-    const addButton = document.querySelector('#addButton')
+    const addTodo = document.querySelector('#addTodo')
     const toDoList = document.querySelector('#toDoList')
 
-    addButton.addEventListener('click', (event) => {
+
+    addTodo.addEventListener('click', (event) => {
         const item = document.createElement('div') // div
 
         const checkBox = document.createElement('input') // 완료
@@ -11,7 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         const text = document.createElement('span') // 내용
-        text.textContent = toDo.value
+        text.textContent = toDo.value.trim();
+
+        // onkeypress="if(window.event.keyCode==13){join()}"
 
         const removeButton = document.createElement('button') // 삭제
         removeButton.textContent = '삭제'
