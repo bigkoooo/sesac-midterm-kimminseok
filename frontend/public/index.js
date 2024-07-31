@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     addTodo.addEventListener('click', (event) => {
+        
         const item = document.createElement('div') // div
 
         const checkBox = document.createElement('input') // 완료
