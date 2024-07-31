@@ -28,3 +28,21 @@ exports.posttodos = async (req, res) => {
         res.status(500).send('Internal Server Error');
     }
 }
+
+exports.gettodos= async (req, res) => {
+    try { 
+        console.log(req.params.id)
+        const { id } = req.params;
+
+        // select * from player where player_id = 1
+        const todos = await todo.findOne({
+            where: { id }, // { player_id: player_id }
+            
+        });
+
+        res.json(gettodos); 
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+}

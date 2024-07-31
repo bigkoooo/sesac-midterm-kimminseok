@@ -6,11 +6,12 @@ const router = express.Router();
 // read all -> create -> delte -> read one -> update
 
 // GET / => localhost:PORT/
-router.get('/', controller.todo);
+// router.get('/', controller.todo);
 router.get('/todos', controller.gettodos);
+router.get('/todos/:id', controller.gettodos);
 router.post('/todos', controller.posttodos);
 
-// router.get('/:id', controller.getPlayer);
+
 
 // router.patch('/:title', controller.patchPlayer);
 // router.delete('/:done', controller.deletePlayer);
