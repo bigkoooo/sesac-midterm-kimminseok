@@ -11,6 +11,7 @@ Content-Type: application/json; charset=UTF-8
 }
 
 
+
 ### Todo 추가 (case2. 요청 본문에 title 필드만 작성하는 경우)
 POST {{server}}/todos
 Content-Type: application/json; charset=UTF-8

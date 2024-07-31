@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize'); // sequelize 패키지를 불러옴
-const todoModel = require('./Todo');
+// const todoModel = require('./Todo');
 const config = require(__dirname + '/../config/config.json')["development"]; // db 연결 정보
 const db = {}; // 빈 객체 
 
